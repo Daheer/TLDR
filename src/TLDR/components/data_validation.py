@@ -9,7 +9,7 @@ class DataValidation:
   def validate_all_files_exist(self) -> bool:
     try:
       validation_status = None
-      all_existing_files = os.listdir(os.path.join('artifacts', 'data_ingestion', 'bank-additional'))
+      all_existing_files = os.listdir(os.path.join('artifacts', 'data_ingestion', 'samsum_dataset'))
       for file in self.config.ALL_REQUIRED_FILES:
         if file in all_existing_files:
           validation_status = True
